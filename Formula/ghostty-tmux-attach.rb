@@ -3,7 +3,7 @@ class GhosttyTmuxAttach < Formula
   homepage "https://github.com/leegunwoo98/ghostty-tmux-attach"
   url "https://github.com/leegunwoo98/ghostty-tmux-attach/archive/refs/tags/v0.1.0.tar.gz"
   # sha256 is bumped by the release workflow via `brew bump-formula-pr`
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "670f156f79c7ac05c0260da6dc089e1184c12708978bf09071fef842c1b69582"
   license "MIT"
   head "https://github.com/leegunwoo98/ghostty-tmux-attach.git", branch: "main"
 
