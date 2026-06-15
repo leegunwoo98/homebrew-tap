@@ -5,8 +5,8 @@ Personal Homebrew tap for Gunwoo Lee's tools.
 ## Install
 
 ```sh
-brew tap gunwoo/tap
-brew install gunwoo/tap/ghostty-tmux-attach
+brew tap leegunwoo98/tap
+brew install leegunwoo98/tap/ghostty-tmux-attach
 ```
 
 ## Formulae
