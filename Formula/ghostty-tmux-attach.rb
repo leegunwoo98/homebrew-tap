@@ -7,6 +7,8 @@ class GhosttyTmuxAttach < Formula
   license "MIT"
   head "https://github.com/leegunwoo98/ghostty-tmux-attach.git", branch: "main"
 
+  deprecate! date: "2026-06-15", because: :repo_archived
+
   depends_on "tmux"
   depends_on "bash" => :recommended  # need bash 4+; macOS system bash is 3.2
 
