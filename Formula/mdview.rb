@@ -3,28 +3,28 @@
 class Mdview < Formula
   desc "Markdown review in the browser with Approve / Request-changes buttons"
   homepage "https://github.com/claude-code-tools/mdview-review"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.1/mdview-darwin-arm64"
-      sha256 "c8df779989033fbd2873d5737f8af8e56359dc361cefe6cf25a9384019e743a8"
+      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.2/mdview-darwin-arm64"
+      sha256 "ecc47fa011eae16f6c3309565e438d2d0ecb5042f3536560753ab8544f90c029"
     end
     on_intel do
-      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.1/mdview-darwin-amd64"
-      sha256 "cfed4ffe0bf3d9ccb267f8367120435b1f1090e44fc1a91e6be6f279d58f0c1e"
+      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.2/mdview-darwin-amd64"
+      sha256 "daf4c9f9463f56c39cc802ba959cfae5178e94929ec6447f375a11d86029bd9a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.1/mdview-linux-arm64"
-      sha256 "885d9c85880a3a6f909e5a1a08bb30e4802766d5aaa3a93973b0cb006d8f4cf9"
+      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.2/mdview-linux-arm64"
+      sha256 "6c9d84b0a14e229398faa5f937cac696cc08583cfb6c23588468768748eef676"
     end
     on_intel do
-      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.1/mdview-linux-amd64"
-      sha256 "bd2e2f19fa1ce42bbf4f83ef2dc12472e5f46ee7ac93cbf020beefb219911996"
+      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.2/mdview-linux-amd64"
+      sha256 "d05a50860a10012c9d3c4fc19547ec4ab46412887f7855e4515729d480e30f15"
     end
   end
 
