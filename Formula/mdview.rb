@@ -1,5 +1,5 @@
 class Mdview < Formula
-  desc "Render a markdown doc with in-page Approve / Request-changes buttons for Claude Code"
+  desc "Markdown review in the browser with Approve / Request-changes buttons"
   homepage "https://github.com/claude-code-tools/mdview-review"
   version "0.1.0"
   license "MIT"
