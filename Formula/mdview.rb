@@ -1,28 +1,28 @@
 class Mdview < Formula
   desc "Markdown review in the browser with Approve / Request-changes buttons"
   homepage "https://github.com/claude-code-tools/mdview-review"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.0/mdview-darwin-arm64"
-      sha256 "1f5db83fb074ec80b2c3c7dbf9a144f65e4f49fc492c12a53f5cdeef32836b0b"
+      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.1/mdview-darwin-arm64"
+      sha256 "c8df779989033fbd2873d5737f8af8e56359dc361cefe6cf25a9384019e743a8"
     end
     on_intel do
-      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.0/mdview-darwin-amd64"
-      sha256 "0179efe2e8feea4eefa50be03a96a66498ed570956f15a111b8837019d2263fd"
+      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.1/mdview-darwin-amd64"
+      sha256 "cfed4ffe0bf3d9ccb267f8367120435b1f1090e44fc1a91e6be6f279d58f0c1e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.0/mdview-linux-arm64"
-      sha256 "39981427b0a1aa41a13335e428aa446ff70f4d63b06cc74abb060572e913689b"
+      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.1/mdview-linux-arm64"
+      sha256 "885d9c85880a3a6f909e5a1a08bb30e4802766d5aaa3a93973b0cb006d8f4cf9"
     end
     on_intel do
-      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.0/mdview-linux-amd64"
-      sha256 "3bc7ea75021bc03a20ef355a2499103c205461363582529f50f93659333b440c"
+      url "https://github.com/claude-code-tools/mdview-review/releases/download/v0.1.1/mdview-linux-amd64"
+      sha256 "bd2e2f19fa1ce42bbf4f83ef2dc12472e5f46ee7ac93cbf020beefb219911996"
     end
   end
 
@@ -34,5 +34,6 @@ class Mdview < Formula
   test do
     (testpath/"t.md").write("# hello\n")
     assert_match "mdview review", shell_output("#{bin}/mdview --print #{testpath}/t.md")
+    assert_match "mdview", shell_output("#{bin}/mdview --version")
   end
 end
